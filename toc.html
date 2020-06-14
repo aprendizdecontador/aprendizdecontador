@@ -1,0 +1,145 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+   <meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+   <link rel="StyleSheet" href="dtree.css" type="text/css" />
+   <script type="text/javascript" src="dtree.js"></script>
+  <style type="text/css">
+    * html body{ /*IE6 hack*/
+    padding: 0 0 0 0;
+    }
+    body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    height: 100%;
+    max-height: 100%;
+    }
+    #framecontent{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    #width:100%;
+    height: 100%;
+    overflow: auto;
+    border-right:1px dashed #d8d8d8;
+    }
+  </style>
+</head>
+<body>
+  <div id="framecontent">
+    <div class="dtree" style="margin:0px;padding:0px;padding-left:6px;padding-top:6px;">
+    	<script type="text/javascript">
+    		<!--
+    		d = new dTree('d');
+    		d.config.target="right";
+        d.config.useCookies=false;
+  d.add(0,-1,'CURSO DE CONTABILIDADE','');
+  d.add('1','0','DISCIPLINAS','');
+  d.add('1.20','1','ENSINO TÉCNICO','mnk_1_20.htm');
+  d.add('1.3','1.20','CONTABILIDADE GERAL','mnk_1_3.htm');
+  d.add('1.4','1.20','CONTABILIDADE COMERCIAL','mnk_1_4.htm');
+  d.add('1.25','1.4','PLANO DE CURSO','mnk_1_25.htm');
+  d.add('1.5','1.20','TÓPICOS ESPECIAIS EM CONTABILIDADE','mnk_1_5.htm');
+  d.add('1.6','1.20','CONTABILIDADE RURAL','mnk_1_6.htm');
+  d.add('1.7','1.20','CONTABILIDADE AMBIENTAL','mnk_1_7.htm');
+  d.add('1.8','1.20','CONTABILIDADE DO TERCEIRO SETOR','mnk_1_8.htm');
+  d.add('1.9','1.20','ANÁLISE DAS DEMONSTRAÇÕES CONTÁBEIS','mnk_1_9.htm');
+  d.add('1.26','1.9','PLANO DE CURSO','mnk_1_26.htm');
+  d.add('1.12','1.9','DEMONSTRAÇÕES CONTÁBEIS','mnk_1_12.htm');
+  d.add('1.17','1.12','BALANÇO PATRIMONIAL','mnk_1_17.htm');
+  d.add('1.18','1.12','DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO','mnk_1_18.htm');
+  d.add('1.19','1.12','DEMONSTRAÇÃO DOS LUCROS OU PREJUÍZOS ACUMULADOS','mnk_1_19.htm');
+  d.add('1.13','1.9','RECLASSIFICAÇÃO DAS DEMONSTRAÇÕES CONTÁBEIS','mnk_1_13.htm');
+  d.add('1.14','1.9','ANÁLISE HORIZONTAL E VERTICAL','mnk_1_14.htm');
+  d.add('1.15','1.9','ANÁLISE POR QUOCIENTES','mnk_1_15.htm');
+  d.add('1.16','1.9','RELATÓRIO E ANÁLISE','mnk_1_16.htm');
+  d.add('1.11','1.20','CONTABILIDADE DE CUSTOS','mnk_1_11.htm');
+  d.add('1.21','1','ENSINO SUPERIOR','mnk_1_21.htm');
+  d.add('1.22','1','ESPECIALIZAÇÃO','mnk_1_22.htm');
+  d.add('1.24','1.22','CONTABILIDADE FINANCEIRA','mnk_1_24.htm');
+  d.add('1.23','1.22','ORÇAMENTO EMPRESARIAL','mnk_1_23.htm');
+  d.add('2','0','TERMOS E ARTIGOS','');
+  d.add('2.4','2','BALANÇO PATRIMONIAL','mnk_2_4.htm');
+  d.add('2.12','2','CONTABILIDADE','mnk_2_12.htm');
+  d.add('2.10','2','DEMONSTRAÇÃO DO RESULTADO DO EXERCÍCIO','mnk_2_10.htm');
+  d.add('2.11','2','DEMONSTRAÇÃO DOS LUCROS OU PREJUÍZOS ACUMULADOS','mnk_2_11.htm');
+  d.add('2.3','2','DEMONSTRAÇÕES CONTÁBEIS','mnk_2_3.htm');
+  d.add('2.13','2','PATRIMÔNIO','mnk_2_13.htm');
+  d.add('2.14','2','USUÁRIOS DA INFORMAÇÃO CONTÁBIL','mnk_2_14.htm');
+  d.add('3','0','MODELO DE PLANO DE CONTAS','');
+  d.add('3.1','3','ATIVO','mnk_3_1.htm');
+  d.add('3.5','3.1','ATIVO CIRCULANTE','mnk_3_5.htm');
+  d.add('3.7','3.5','DISPONIBILIDADES','mnk_3_7.htm');
+  d.add('3.15','3.5','CRÉDITOS','mnk_3_15.htm');
+  d.add('3.16','3.5','ESTOQUES','mnk_3_16.htm');
+  d.add('3.24','3.16','ALMOXARIFADO','mnk_3_24.htm');
+  d.add('3.25','3.16','MATERIA PRIMA','mnk_3_25.htm');
+  d.add('3.26','3.16','PRODUTOS EM ELABORAÇÃO','mnk_3_26.htm');
+  d.add('3.27','3.16','PRODUTOS ACABADOS','mnk_3_27.htm');
+  d.add('3.28','3.16','MERCADORIAS','mnk_3_28.htm');
+  d.add('3.17','3.5','DESPESAS PAGAS ANTECIPADAMENTE','mnk_3_17.htm');
+  d.add('3.6','3.1','ATIVO NÃO CIRCULANTE','mnk_3_6.htm');
+  d.add('3.11','3.6','REALIZÁVEL A LONGO PRAZO','mnk_3_11.htm');
+  d.add('3.12','3.6','INVESTIMENTOS','mnk_3_12.htm');
+  d.add('3.29','3.12','PARTICIPAÇÕES SOCIETÁRIAS','mnk_3_29.htm');
+  d.add('3.13','3.6','IMOBILIZADO','mnk_3_13.htm');
+  d.add('3.14','3.6','INTANGÍVEL','mnk_3_14.htm');
+  d.add('3.2','3','PASSIVO','mnk_3_2.htm');
+  d.add('3.8','3.2','PASSIVO CIRCULANTE','mnk_3_8.htm');
+  d.add('3.9','3.2','PASSIVO NÃO CIRCULANTE','mnk_3_9.htm');
+  d.add('3.10','3.2','PATRIMÔNIO LÍQUIDO','mnk_3_10.htm');
+  d.add('3.18','3.10','CAPITAL SOCIAL','mnk_3_18.htm');
+  d.add('3.19','3.10','RESERVAS DE CAPITAL','mnk_3_19.htm');
+  d.add('3.20','3.10','AJUSTES DE AVALIAÇÃO PATRIMONIAL','mnk_3_20.htm');
+  d.add('3.21','3.10','RESERVAS DE LUCROS','mnk_3_21.htm');
+  d.add('3.22','3.10','PREJUÍZOS ACUMULADOS','mnk_3_22.htm');
+  d.add('3.3','3','RECEITAS','mnk_3_3.htm');
+  d.add('3.35','3.3','FATURAMENTO BRUTO','mnk_3_35.htm');
+  d.add('3.41','3.3','DEDUÇÕES DA RECEITA','mnk_3_41.htm');
+  d.add('3.36','3.41','IPI SOBRE AS VENDAS','mnk_3_36.htm');
+  d.add('3.37','3.41','ICMS SOBRE AS VENDAS','mnk_3_37.htm');
+  d.add('3.38','3.41','ISS SOBRE AS VENDAS','mnk_3_38.htm');
+  d.add('3.39','3.41','DEVOLUÇÃO DE VENDAS','mnk_3_39.htm');
+  d.add('3.40','3.41','ABATIMENTO SOBRE AS VENDAS','mnk_3_40.htm');
+  d.add('3.4','3','DESPESAS','mnk_3_4.htm');
+  d.add('3.42','3.4','CUSTO DO SERVIÇO PRESTADO','mnk_3_42.htm');
+  d.add('3.43','3.4','CUSTO DO PRODUTO VENDIDO','mnk_3_43.htm');
+  d.add('3.44','3.4','CUSTO DA MERCADORIA VENDIDA','mnk_3_44.htm');
+  d.add('3.23','3.4','DESPESAS OPERACIONAIS','mnk_3_23.htm');
+  d.add('3.45','3.23','DESPESAS COM VENDAS','mnk_3_45.htm');
+  d.add('3.57','3.45','PUBLICIDADE E PROPAGANDA','mnk_3_57.htm');
+  d.add('3.58','3.45','DESPESAS COM PESSOAL','mnk_3_58.htm');
+  d.add('3.59','3.45','DESPESAS COM ALUGUEL','mnk_3_59.htm');
+  d.add('3.60','3.45','FRETE SOBRE AS VENDAS','mnk_3_60.htm');
+  d.add('3.46','3.23','DESPESAS ADMINISTRATIVAS','mnk_3_46.htm');
+  d.add('3.61','3.46','ALUGUEL','mnk_3_61.htm');
+  d.add('3.62','3.46','DESPESAS COM PESSOAL','mnk_3_62.htm');
+  d.add('3.63','3.46','AGUA, LUZ E TELEFONE','mnk_3_63.htm');
+  d.add('3.64','3.46','MANUTENÇÃO DE EQUIPAMENTOS','mnk_3_64.htm');
+  d.add('3.47','3.23','RESULTADO FINANCEIRO','mnk_3_47.htm');
+  d.add('3.48','3.47','DESPESAS FINANCEIRAS','mnk_3_48.htm');
+  d.add('3.65','3.48','JUROS DE FINANCIAMENTOS','mnk_3_65.htm');
+  d.add('3.66','3.48','DESPESAS COM JUROS DE MORA','mnk_3_66.htm');
+  d.add('3.49','3.47','RECEITAS FINANCEIRAS','mnk_3_49.htm');
+  d.add('3.67','3.49','RECEITAS COM JUROS DE MORA','mnk_3_67.htm');
+  d.add('3.50','3.23','OUTROS RESULTADOS OPERACIONAIS','mnk_3_50.htm');
+  d.add('3.51','3.50','OUTRAS DESPESAS OPERACIONAIS','mnk_3_51.htm');
+  d.add('3.52','3.50','OUTRAS RECEITAS OPERACIONAIS','mnk_3_52.htm');
+  d.add('3.68','3.52','RECEITAS COM ALUGUEIS','mnk_3_68.htm');
+  d.add('3.53','3.4','RESULTADO DE OPERAÇÕES DESCONTINUADAS','mnk_3_53.htm');
+  d.add('3.69','3.53','RECEITAS DE OPERAÇÕES DESCONTINUADAS','mnk_3_69.htm');
+  d.add('3.70','3.53','DESPESAS DE OPERAÇÕES DESCONTINUADAS','mnk_3_70.htm');
+  d.add('3.54','3.4','IMPOSTOS SOBRE O LUCRO','mnk_3_54.htm');
+  d.add('3.55','3','TRANSITÓRIAS','mnk_3_55.htm');
+  d.add('3.56','3.55','APURAÇÃO DO RESULTADO DO EXERCÍCIO','mnk_3_56.htm');
+    		document.write(d);
+    		//-->
+</script>
+</div>
+</div>
+</body>
+</html>
